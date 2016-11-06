@@ -35,115 +35,213 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="page-header header-custom">
-                        <h1 id="topOfPage2">Bootstrap Playground</h1>
-                        <p>Lets see what kind of cool shit I can do with Bootstrap.
-                        </p>
+                        <h1 id="topOfPage2" align="center">Bootstrap Playground</h1>
+                        <div class="col-xs-4 text-left">
+                            <div class="previous">
+                                    <span class="glyphicon glyphicon-arrow-right"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 text-center">
+                            <div>
+                                <p align="center">Lets see what kind of cool shit I can do with Bootstrap.</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 text-right">
+                            <div class="next">
+                                <span class="glyphicon glyphicon-arrow-left"></span>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <h2 id="playingAround" align="center">This Table is where I'm playing around with collapsable content.</h2>
+                <div class="panel panel-default panel-custom" style="border: 2px solid black">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th>Team</th>
+                                <th>City</th>
+                                <th>Rank</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <!-- Here is my First Table Row -->
+                            <tr>
+                                <td><span data-toggle="collapse" data-target="#row1" class="accordion-toggle chevron_toggleable glyphicon glyphicon-chevron-right" style="cursor: pointer;"></span></td>
+                                <td>Blues</td>
+                                <td>Saint Louis, MO</td>
+                                <td>1</td>
+                            </tr>
+
+                            <!-- Here is my First Hidden Table Row -->
+                            <tr class="accordion-body collapse" id="row1">
+                                <td colspan="12">
+                                    <div>
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>&nbsp;</th>
+                                                    <th>Access Key</th>
+                                                    <th>Secret Key</th>
+                                                    <th>Status </th>
+                                                    <th> Created</th>
+                                                    <th> Expires</th>
+                                                    <th>Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>&nbsp;</td>
+                                                <td>access-key-1</td>
+                                                <td>secretKey-1</td>
+                                                <td>Status</td>
+                                                <td>some date</td>
+                                                <td>some date</td>
+                                                <td>
+                                                    <a href="#" class="btn btn-default btn-sm">
+                                                        <i class="glyphicon glyphicon-cog"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- Here is my Second Table Row -->
+                            <tr data-toggle="collapse" data-target="#row2" class="accordion-toggle">
+                                <td><i class="chevron_toggleable glyphicon glyphicon-chevron-right" style="cursor: pointer;"></i></td>
+                                <td>Blackhawks</td>
+                                <td>Chicago, IL</td>
+                                <td>Last Place</td>
+                            </tr>
+
+                            <!-- Here is my Second Hidden Table Row -->
+                            <tr>
+                                <td colspan="12" class="hiddenRow">
+                                    <div class="accordion-body collapse" id="row2">
+                                        <table class="table table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th>&nbsp;</th>
+                                                <th>Pizza</th>
+                                                <th>Taco</th>
+                                                <th>Machete</th>
+                                            </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <h2 id="FirstTable">First Table</h2>
                 <div class="panel panel-default panel-custom" style="border: 2px solid black">
-                <table class="table table-striped">
-                    <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Age</th>
-                        <th>Points</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Nick Willard</td>
-                        <td>88</td>
-                        <td>8,760</td>
-                    </tr>
-                    <tr>
-                        <td>Turd McGurd</td>
-                        <td>13</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>Jill Cooling</td>
-                        <td>35</td>
-                        <td>1000</td>
-                    </tr>
-                    <tr>
-                        <td>Nick Willard</td>
-                        <td>88</td>
-                        <td>8,760</td>
-                    </tr>
-                    </tbody>
-                </table>
-                    </div>
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Points</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Nick Willard</td>
+                            <td>88</td>
+                            <td>8,760</td>
+                        </tr>
+                        <tr>
+                            <td>Turd McGurd</td>
+                            <td>13</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Jill Cooling</td>
+                            <td>35</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <td>Nick Willard</td>
+                            <td>88</td>
+                            <td>8,760</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <!--<a href="#topOfPage" class="btn btn-primary">Go To Top</a>-->
                 <h2 id="SecondTable">Second Table</h2>
                 <div class="panel panel-default panel-custom" style="border: 2px solid black">
-                <table class="table table-striped">
-                    <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Age</th>
-                        <th>Points</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Nick Willard</td>
-                        <td>88</td>
-                        <td>8,760</td>
-                    </tr>
-                    <tr>
-                        <td>Turd McGurd</td>
-                        <td>13</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>Jill Cooling</td>
-                        <td>35</td>
-                        <td>1000</td>
-                    </tr>
-                    <tr>
-                        <td>Nick Willard</td>
-                        <td>88</td>
-                        <td>8,760</td>
-                    </tr>
-                    </tbody>
-                </table>
-                    </div>
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Points</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Nick Willard</td>
+                            <td>88</td>
+                            <td>8,760</td>
+                        </tr>
+                        <tr>
+                            <td>Turd McGurd</td>
+                            <td>13</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Jill Cooling</td>
+                            <td>35</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <td>Nick Willard</td>
+                            <td>88</td>
+                            <td>8,760</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <!--<a href="#topOfPage" class="btn btn-primary">Go To Top</a>-->
                 <h2 id="ThirdTable">Third Table</h2>
                 <div class="panel panel-default panel-custom" style="border: 2px solid black">
-                <table class="table table-striped">
-                    <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Age</th>
-                        <th>Points</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Nick Willard</td>
-                        <td>88</td>
-                        <td>8,760</td>
-                    </tr>
-                    <tr>
-                        <td>Turd McGurd</td>
-                        <td>13</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>Jill Cooling</td>
-                        <td>35</td>
-                        <td>1000</td>
-                    </tr>
-                    <tr>
-                        <td>Nick Willard</td>
-                        <td>88</td>
-                        <td>8,760</td>
-                    </tr>
-                    </tbody>
-                </table>
-                    </div>
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Points</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Nick Willard</td>
+                            <td>88</td>
+                            <td>8,760</td>
+                        </tr>
+                        <tr>
+                            <td>Turd McGurd</td>
+                            <td>13</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Jill Cooling</td>
+                            <td>35</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <td>Nick Willard</td>
+                            <td>88</td>
+                            <td>8,760</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <!--<a href="#topOfPage" class="btn btn-primary">Go To Top</a>-->
             </div>
         </div>
@@ -156,6 +254,13 @@
             e.preventDefault();
             $("#wrapper").toggleClass("active");
             $(this).find('span').toggleClass('glyphicon-indent-right').toggleClass('glyphicon-indent-left');
+        });
+    </script>
+
+    <!-- Collapse toggle script -->
+    <script>
+        $('.chevron_toggleable').on('click', function() {
+            $(this).toggleClass('glyphicon-chevron-right glyphicon-chevron-down');
         });
     </script>
 

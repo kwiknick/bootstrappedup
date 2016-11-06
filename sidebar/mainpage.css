@@ -13,4 +13,6 @@
     -moz-border-radius: 5px;
     border-radius: 5px;
 }
-
+.hiddenRow {
+    padding: 0 !important;
+}
