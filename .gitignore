@@ -46,3 +46,4 @@ fabric.properties
 
 #node-project files
 node_modules/
+package-lock.json
